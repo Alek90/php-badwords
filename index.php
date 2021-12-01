@@ -24,9 +24,16 @@ var_dump($title, $text);
     </h1>
 
     <p class="content">
-        <b>Articolo:</b>
+        <b>Presentazione:</b>
         <?php echo $text ?>
     </p>
+
+    <div class="text_lenght">
+        <b>Numero di caratteri del testo:</b>
+        <?php echo mb_strlen($text) ?>
+        /
+        <?php echo strlen($text) ?>
+    </div>
     
 </body>
 </html>
