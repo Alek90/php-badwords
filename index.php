@@ -46,12 +46,12 @@ var_dump($_GET("badwars"));
 
     <p class="censure_content">
         <b>Anteprima testo:</b>
-        <?php echo str_replace([$model_name, $model_sign], "***", $text) ?>
+        <?php echo str_replace([$model_name, $model_sign], ["***"], $text) ?>
     </p>
 
     <div class="censure_lenght">
         <b>Numero di caratteri del testo:</b>
-        <?php echo mb_strlen($text) ?>
+        <?php echo mb_strlen(str_replace($text)) ?>
         /
         <?php echo strlen($text) ?>
     </div>
