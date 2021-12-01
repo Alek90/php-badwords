@@ -6,7 +6,7 @@ $text = "La Norden 901 è una moto da Touring adventure eccezionale. Spinta da u
 
 $model_name = $_GET["badwars"];
 
-//$model_sign = $_GET("badnumbers");
+$model_sign = $_GET["badnumbers"];
 
 echo '<pre>
 
@@ -44,8 +44,8 @@ var_dump($_GET("badwars"));
         <?php echo strlen($text) ?>
     </div>
 
-    <p>
-        <?php echo str_replace($model_name, "***", $text) ?>
+    <p class="censure_content">
+        <?php echo str_replace([$model_name, $model_sign], ["/----/", "***"], $text) ?>
     </p>
     
     
