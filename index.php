@@ -51,7 +51,7 @@ var_dump($_GET("badwars"));
 
     <div class="censure_lenght">
         <b>Numero di caratteri del testo:</b>
-        <?php echo mb_strlen(str_replace($text)) ?>
+        <?php echo mb_strlen($text) ?>
         /
         <?php echo strlen($text) ?>
     </div>
