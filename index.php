@@ -1,8 +1,8 @@
 <?php
 
-$text = "MV Agusta presenta Lucky Explorer Project 9.5, l'erede della mitica Cagiva Elefant.";
+$title = "MV Agusta presenta Lucky Explorer Project 9.5, l'erede della mitica Cagiva Elefant.";
 
-var_dump($text);
+var_dump($title);
 
 ?>
 
@@ -17,8 +17,13 @@ var_dump($text);
 </head>
 <body>
 
-    <p>
-        Articolo <?php echo $text ?>
+    <h1 class="title">
+        <?php echo $title ?>
+    </h1>
+
+    <p class="content">
+        <b>Articolo:</b>
+        
     </p>
     
 </body>
