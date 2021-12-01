@@ -45,8 +45,16 @@ var_dump($_GET("badwars"));
     </div>
 
     <p class="censure_content">
-        <?php echo str_replace([$model_name, $model_sign], ["/----/", "***"], $text) ?>
+        <b>Anteprima testo:</b>
+        <?php echo str_replace([$model_name, $model_sign], ["/---/", "***"], $text) ?>
     </p>
+
+    <div class="censure_lenght">
+        <b>Numero di caratteri del testo:</b>
+        <?php echo mb_strlen($text) ?>
+        /
+        <?php echo strlen($text) ?>
+    </div>
     
     
 </body>
